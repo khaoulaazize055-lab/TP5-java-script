@@ -1,0 +1,16 @@
+let nombreSecret = Math.floor(Math.random() * 10) + 1;
+let tentative;
+let score = 0;
+
+do{
+    tentative = parseInt(prompt("Deviner un nombre entre 1 et 10 :"));
+    score++;
+
+    if (tentative < nombreSecret){
+        alert("le nombre est plus grand !");
+    }else if (tentative > nombreSecret){
+        alert("le nombre est plus petit !");
+    }else{
+        alert("Bravo ! Vous avez trouvé en" + score + " tentatives");
+    }             
+    }while (tentative != nombreSecret);
