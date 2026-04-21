@@ -1,0 +1,17 @@
+const QUESTIONS = [
+    ["Quelle est ton nom?" , "Khaoula"],
+    ["Quelle est la capitale de maroc?" , "Rabat"]
+];
+function lancerQuiz(){
+    let score = 0;
+    for (let i = 0; i < QUESTIONS.length; i++){
+        let reponse = prompt(QUESTIONS[i][0]);
+        if(reponse.toLowerCase() === QUESTIONS[i][1].toLowerCase()){
+            alert("Réponse Vrai !");
+            score++;
+        } else {
+            alert("Réponse Fausse !");
+    }
+  }
+  alert("vous avez répondu correctement à" + score + "questions sur" + QUESTIONS.length);
+}
