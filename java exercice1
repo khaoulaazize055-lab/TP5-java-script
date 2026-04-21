@@ -1,0 +1,12 @@
+let a = parseFloat(prompt("Donnez le premier nombre :"));
+let b = parseFloat(prompt("Donnez le deuxième nombre :"));
+
+let somme = a + b;
+let différence = a - b;
+let produit = a * b;
+let quotient = b !== 0 ? a / b : "Division par zéro impossible";
+
+console.log("Somme :", somme);
+console.log("Différence :", différence);
+console.log("Produit :", produit);
+console.log("Quotient :", quotient);
